@@ -3,42 +3,52 @@
 	<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
 	<style type="text/css">
 		body { 
-  				background-image: url('tshirt_demo.png');
- 				 background-repeat: no-repeat;
- 				 background-attachment: fixed; 
- 				 width:800px; /* The width is fixed by pixels */
-                 height:400px;
+			background-image: url('tshirt_demo.png');
+			background-repeat: no-repeat;
+			background-attachment: fixed; 
+
 		}
 		.wrap{
-				position: relative;
-				padding-top: 10%;
-				padding-left: 15%;
-			}
+			position: relative;
+			padding-top: 10%;
+			padding-left: 50%;
+			display: flex;
+			justify-content: center;
+		}
+		.wrap2{
+			position: relative;
+			padding-top: 10%;
+			text-align: center;
+			margin-left: 50%;
+		}
+		.buttons
+		{
+			width:260px;
+			height: 160px;
+		}
 		h1{
-				
-				font-family: Roboto;
-				font-style: normal;
-				font-weight: bold;
-				font-size: 35px;
-				color: #000000;
-			}
+
+			font-family: Roboto;
+			font-style: normal;
+			font-weight: bold;
+			font-size: 40px;
+			color: #000000;
+		}
 		h2{
 			font-family: Roboto;
 			font-style: normal;
 			font-weight: normal;
-			font-size: 20px;
+			font-size: 23px;
 		}
 
 	</style>
 </head>
 <body>
-<div class="wrap">
-	<center>
-	<h1>Want this awesome T-shirt ?</h1>
-	<h2>Exclusively available for Manglish users</h2>
-	<img src="goback.svg">
-	<img src="getnow.svg">
-	</center>
-</div>
+	<div class="wrap2" align="right">
+		<h1>Want this awesome T-shirt ?</h1>
+		<h2>Exclusively available for Manglish users</h2>
+		<img src="goback.svg" class="buttons">
+		<img src="getnow.svg" class="buttons">
+	</div>
 </body>
 </html>
