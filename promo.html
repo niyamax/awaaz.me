@@ -4,7 +4,7 @@
 	<style type="text/css">
 		body { 
 			background-image: url('tshirt_demo.png');
-			background-color: red;
+			background-color: white;
 			background-repeat: no-repeat;
 			background-attachment: fixed; 
 
@@ -22,11 +22,24 @@
 			text-align: center;
 			margin-left: 50%;
 		}
-		.buttons
+		.button
 		{
-			width:260px;
-			height: 160px;
+			width:200px;
+			height: 60px;
+			border-radius: 30px;
+			font-size: 20px;
+			font-family: Roboto;
 		}
+		.buttonNegative
+		{
+			background-color: transparent;
+			border: 1px solid #000;
+		}
+	.buttonNegative:hover {
+  background-color: #4CAF50; /* Green */
+  color: white;
+}
+
 		h1{
 
 			font-family: Roboto;
@@ -48,8 +61,8 @@
 	<div class="wrap2" align="right">
 		<h1>Want this awesome T-shirt ?</h1>
 		<h2>Exclusively available for Manglish users</h2>
-		<img src="goback.svg" class="buttons">
-		<img src="getnow.svg" class="buttons">
+		<button class="button buttonNegative">Go Back</button>
+		<img src="getnow.svg" class="button">
 	</div>
 </body>
 </html>
