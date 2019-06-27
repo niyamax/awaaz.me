@@ -35,7 +35,7 @@
 			background-color: transparent;
 			border: 1px solid #000;
 		}
-	.buttonNegative:active {
+		.buttonNegative:active {
 			background-color: #4CAF50; /* Green */
 			color: white;
 		}
@@ -56,12 +56,17 @@
 		}
 
 	</style>
+	<script>
+function myFunction() {
+  alert("Hello! I am an alert box!");
+}
+</script>
 </head>
 <body>
 	<div class="wrap2" align="right">
 		<h1>Want this awesome T-shirt ?</h1>
 		<h2>Exclusively available for Manglish users</h2>
-		<a href="https://www.facebook.com/"><button class="button buttonNegative">Go Back</button></a>
+		<button class="button buttonNegative" onclick="myFunction()">Go Back</button>
 		<img src="getnow.svg" class="button">
 	</div>
 </body>
