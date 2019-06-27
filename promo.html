@@ -1,6 +1,5 @@
-<html style="width: 800px;height: 400px">
+<html>
 <head>
-	<meta name="viewport" content='width=device-width, initial-scale=1.0,text/html,charset=utf-8'>
 	<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
 	<style type="text/css">
 		body { 
@@ -8,12 +7,15 @@
  				 background-repeat: no-repeat;
  				 background-attachment: fixed; 
  				 width:800px; /* The width is fixed by pixels */
-                height:400px;
+                 height:400px;
 		}
-		h1{
+		.wrap{
 				position: relative;
-				left: 50%;
-				top: 100px;
+				padding-top: 10%;
+				padding-left: 15%;
+			}
+		h1{
+				
 				font-family: Roboto;
 				font-style: normal;
 				font-weight: bold;
@@ -21,30 +23,22 @@
 				color: #000000;
 			}
 		h2{
-			position: relative;
-			left: 54%;
-			top: 100px;
 			font-family: Roboto;
 			font-style: normal;
 			font-weight: normal;
 			font-size: 20px;
 		}
-		.buttons
-		{
-			position: relative;
-			left: 59%;
-			top: 110px;
-			margin-right: 2%;
-		}
 
 	</style>
 </head>
 <body>
-<div>
+<div class="wrap">
+	<center>
 	<h1>Want this awesome T-shirt ?</h1>
 	<h2>Exclusively available for Manglish users</h2>
-	<img src="goback.svg" class="buttons">
-	<img src="getnow.svg" class="buttons">
+	<img src="goback.svg">
+	<img src="getnow.svg">
+	</center>
 </div>
 </body>
 </html>
