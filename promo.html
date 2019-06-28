@@ -1,28 +1,27 @@
 <html>
 <head>
-	<title>Promo v1.4</title>
+	<title>Promo v1.5</title>
 	<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
 	<style type="text/css">
-		.wrap{
-			position: relative;
+		.wrap {
+			position: absolute;
 			width: 80%;
 			height: 80%;
 			display: flex;
-			top:100px;
+			top: 100px;
 			left: 50px;
 		}
-		.newwrap{
-			position: relative;
+		.newwrap {
+			position: absolute;
 			width: 687px;
 			height: 54px;
-			left: 100px;
-			top:50px;
+			left: 50%;
+			top: 100px;
 			font-family: Roboto;
 			font-style: normal;
 			font-weight: 500;
 			font-size: 52px;
 			text-align: center;
-			color: #000000;
 		}
 		.button
 		{
@@ -82,14 +81,14 @@
 	</script>
 </head>
 <body>
-		<div class="wrap">
-			<img src="tshirt.png" class="imgbox">
-		<div class="newwrap" align="right">
+	<div class="wrap">
+		<img src="tshirt.png" class="imgbox">
+		<div class="newwrap">
 			<h1>Want this awesome T-shirt ?</h1>
 			<h2>Exclusively available for Manglish users</h2>
 			<button class="button buttonNegative" onclick="buttonBack()">Go back</button>
 			<button class="button buttonPositive" onclick="buttonSuccess()">Buy now</button>
 		</div>
-		</div>
+	</div>
 </body>
 </html>
