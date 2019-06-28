@@ -8,18 +8,30 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
   <script>
-function myFunction() {
-  alert("Hello!");
-  JSInterface.buttonClick();
-}
+  function buttonSuccess() {
+  JSInterface.buttonSuccess();
+  }
+  function buttonBack) {
+  JSInterface.buttonBack();
+  }
 </script>
 </head>
 <body>
 
-<div class="container">
-  <h2>Button Styles</h2>
-  <button type="button" class="btn btn-default">Default</button>
-  <button type="button" class="btn btn-primary" onclick="myFunction()">Success</button>      
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-12">
+      <h3 class="text-center">
+        Promotional Text
+      </h3> 
+      <button type="button" class="btn btn-lg btn-block btn-success" onclick="buttonSuccess()">
+        Get now
+      </button> 
+      <button type="button" class="btn btn-block btn-outline-secondary" onclick="buttonBack()">
+        Go back
+      </button>
+    </div>
+  </div>
 </div>
 
 </body>
