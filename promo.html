@@ -2,9 +2,10 @@
 <head>
 	<title>Promo v1.6</title>
 	<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+	<meta name="viewport" content="width=device-width">
 	<style type="text/css">
 		.wrap {
-			position: absolute;
+			position: relative;
 			width: 80%;
 			height: 80%;
 			display: flex;
@@ -12,24 +13,23 @@
 			left: 50px;
 		}
 		.newwrap {
-			position: absolute;
+			position: relative;
 			width: 687px;
 			height: 54px;
-			left: 50%;
+			left: 10%%;
 			top: 100px;
 			font-family: Roboto;
 			font-style: normal;
-			font-weight: 500;
-			font-size: 52px;
 			text-align: center;
 		}
 		.button
 		{
-			width:300px;
-			height: 90px;
-			border-radius: 50px;
+			width:266px;
+			height: 79px;
+			border-radius: 40px;
 			font-size: 20px;
 			font-family: Roboto;
+			margin: 5px;
 		}
 		.buttonNegative
 		{
@@ -53,25 +53,9 @@
 		.imgbox{
 			width:400px; 
 			height:397px;
-			position: absolute;
+			position: relative;
 			padding-top: 30px;
 		}
-		h1{
-
-			font-family: Roboto;
-			font-style: normal;
-			font-weight: medium;
-			font-size: 40px;
-			color: #000000;
-		}
-		h2{
-			font-family: Roboto;
-			font-style: normal;
-			font-weight: normal;
-			font-size: 23px;
-			color: #000000;
-		}
-
 	</style>
 	<script>
 		function buttonSuccess() {
@@ -84,12 +68,13 @@
 </head>
 <body>
 	<div class="wrap">
-		<img src="tshirt.png" class="imgbox">
+		<img src="tshirt.png">
 		<div class="newwrap">
 			<h1>Want this awesome T-shirt ?</h1>
-			<h2>Exclusively available for Manglish users</h2>
-			<button class="button buttonNegative" onclick="buttonBack()">Go back</button>
+			<p>Exclusively available for Manglish users</p>
 			<button class="button buttonPositive" onclick="buttonSuccess()">Buy now</button>
+			<p onclick="buttonBack()">Go back</b>
+			
 		</div>
 	</div>
 </body>
