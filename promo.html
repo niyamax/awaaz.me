@@ -1,46 +1,74 @@
-<html lang="en">
+<html>
 <head>
-  <title>Bootstrap Example V1.5</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-  <style type="text/css">
-    .btn-block {
-    padding: 10% 0; 
-    /* define values in pixels / Percentage or em. whatever suits 
-       your requirements */
-    }
-  </style>
-  <script>
-  function buttonPrimary() {
-    alert("Hello!");
-  JSInterface.buttonSuccess();
-  }
-    function buttonSecondary() {
-    alert("Hello!");
-  JSInterface.buttonBack();
-  }
+	<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+	<style type="text/css">
+		body { 
+			background-image: url('tshirt_demo.png');
+			background-color: white;
+			background-repeat: no-repeat;
+			background-attachment: fixed; 
+
+		}
+		.wrap{
+			position: relative;
+			padding-top: 10%;
+			padding-left: 50%;
+			display: flex;
+			justify-content: center;
+		}
+		.wrap2{
+			position: relative;
+			padding-top: 10%;
+			text-align: center;
+			margin-left: 50%;
+		}
+		.button
+		{
+			width:200px;
+			height: 60px;
+			border-radius: 30px;
+			font-size: 20px;
+			font-family: Roboto;
+		}
+		.buttonNegative
+		{
+			background-color: transparent;
+			border: 1px solid #000;
+		}
+		.buttonNegative:active {
+			background-color: #4CAF50; /* Green */
+			color: white;
+		}
+
+		h1{
+
+			font-family: Roboto;
+			font-style: normal;
+			font-weight: bold;
+			font-size: 40px;
+			color: #000000;
+		}
+		h2{
+			font-family: Roboto;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 23px;
+		}
+
+	</style>
+	<script>
+function myFunction() {
+  alert("Hello!");
+  JSInterface.buttonClick();
+}
 </script>
 </head>
 <body>
-
-<div class="container-fluid">
-  <div class="row">
-    <div class="col-md-12">
-      <h3 class="text-center">
-        Promotional Text
-      </h3> 
-      <button type="button" class="btn btn-lg btn-block btn-success" onClick="buttonPrimary()">
-        Get now
-      </button> 
-      <button type="button" class="btn btn-block btn-outline-secondary" onClick="buttonSecondary()">
-        Go back
-      </button>
-    </div>
-  </div>
-</div>
-
+	<div class="wrap2" align="right">
+		<h1>Want this awesome T-shirt ?</h1>
+		<h2>Exclusively available for Manglish users</h2>
+		<button class="button buttonNegative" onclick="myFunction()">Go Back</button>
+		<img src="getnow.svg" class="button">
+	</div>
 </body>
 </html>
