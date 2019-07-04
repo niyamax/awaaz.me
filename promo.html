@@ -2,7 +2,7 @@
 <html>
 <head>
   <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/base-min.css">
-  <title>new v3</title>
+  <title>new v4</title>
   <style type="text/css">
      html,body {
       width: 100%;
@@ -24,6 +24,14 @@
       text-align: center;
       justify-content: center;
       align-items: center;
+    }
+    .left
+    {
+      flex:4
+    }
+    .right
+    {
+      flex:8
     }
     .image {
       height: 50%;
@@ -66,8 +74,8 @@
 
 <body>
  <div class="flex-container">
-  <div class="flex-container-child" style="flex-grow:4" ><img src="tshirt.png" id="tshirt" class="image" ></div>
-  <div class="flex-container-child" style="flex-grow:8">
+  <div class="flex-container-child"><img src="tshirt.png" id="tshirt" class="image" ></div>
+  <div class="flex-container-child">
     <p class="title">Want this tshirt ?</p>
     <p class="description">Exclusively available for Manglish users</p>
     <button id="button_1" class="button button-negative">Go Back</button>
