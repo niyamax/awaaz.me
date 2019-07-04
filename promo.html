@@ -1,89 +1,46 @@
 <!DOCTYPE html>
 <html>
-
 <head>
   <meta charset="utf-8">
   <title>new</title>
-  
-  <style type="text/css" id="gwd-text-style">
-    p {
-      margin: 0px;
-    }
-    h1 {
-      margin: 0px;
-    }
-    h2 {
-      margin: 0px;
-    }
-    h3 {
-      margin: 0px;
-    }
-  </style>
   <style type="text/css">
     html, body {
       width: 100%;
       height: 100%;
-      margin: 0px;
-
     }
     body {
-      background-color: transparent;
-      transform: perspective(1400px) matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
-      transform-style: preserve-3d;
+      background-color: yellow;
     }
     .flex-container {
+      background-color: #f1f1f1;
       display: flex;
-      flex-direction: row;
-       justify-content: center;
+      width: 100%;
+      height: 100%;
     }
-    .flex-container > div {
-      width: 100px;
+    .flex-container-child {
+      background-color: blue;
       text-align: center;
-      line-height: 75px;
       justify-content: center;
+      align-items: center;
     }
-    .gwd-img-s0mq {
-      position: absolute;
-      left: 36px;
-      top: 85px;
+    .image {
       width: 388px;
       height: 387px;
-      transform-origin: 194.38px 193.5px 0px;
     }
-    .para {
-      position: absolute;
+    .title {
       text-align: center;
-      font-family: roboto;
-      width: 416px;
-      height: 58px;
-      transform-origin: 208px 28.7775px 0px;
-      font-size: 50px;
-      font-weight: bold;
-      top: 174px;
-      /*left: 55%;*/
-      transform-style: preserve-3d;
-      transform: translate3d(-114px, -3px, 0px);
-    }
-    .para2 {
-      position: absolute;
       font-family: roboto;
       font-size: 50px;
       font-weight: bold;
-      text-align: center;
-      top: 227px;
-      /*  left: 55%;*/
-      transform-style: preserve-3d;
-      transform: translate3d(-82px, -17px, 0px);
     }
-    .gwd-span-1n34 {
+    .description {
+      font-family: roboto;
+      font-size: 50px;
+      text-align: center;
       font-weight: normal;
       font-size: 20px;
-      left: 158px;
-      width: 195px;
-      height: 1px;
-      transform-origin: 0px 0px 0px;
-      top: 37px;
     }
+
     .button
     {
       width:250px;
@@ -94,20 +51,12 @@
       justify-content: center;
       background-color: transparent;
       border: 0px solid #000;
-      /* left: 53%;*/
     }
     .button-negative {
-      position: absolute;
-      transform-origin: 79.8611px 19.1667px 0px;
-      
-      top:370px;
       font-size: 26px;
 
     }
     .button-positive {
-      position: absolute;
-      top: 298px;
-      transform-origin: 79.8611px 19.1667px 0px;
       background-color: #000000;
       border: 1px solid #000;
       color:white;
@@ -115,14 +64,15 @@
   </style>
 </head>
 
-<body class="htmlNoPages">
+<body>
  <div class="flex-container">
-    <img src="assets/tshirt.png" id="tshirt" class="gwd-img-s0mq">
-    <p class="para">Want this tshirt ?</p>
-    <p class="para2"><span class="gwd-span-1n34">Exclusively available for Manglish users</span></p>
+  <div class="flex-container-child" style="flex:4" ><img src="assets/tshirt.png" id="tshirt" class="image" ></div>
+  <div class="flex-container-child" style="flex:8">
+    <p class="title">Want this tshirt ?</p>
+    <p class="description">Exclusively available for Manglish users</p>
     <button id="button_1" class="button button-negative">Go Back</button>
     <button id="button_2" class="button button-positive">Button</button>
-
+  </div>
 </div>
 </body>
 
