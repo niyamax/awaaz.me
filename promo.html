@@ -2,7 +2,7 @@
 <html>
 <head>
   <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/base-min.css">
-  <title>new v5</title>
+  <title>new v6</title>
   <style type="text/css">
      html,body {
       width: 100%;
@@ -34,34 +34,35 @@
       flex:2;
     }
     .image {
-      width: 50%;
+      width: 100%;
     }
     .title {
-      text-align: center;
       font-family: roboto;
-      font-size: 50px;
+      line-height: 0px;
+      font-size: 5vw;
       font-weight: bold;
     }
     .description {
       font-family: roboto;
-      text-align: center;
       font-weight: normal;
-      font-size: 20px;
+      line-height: 0px;
+      font-size: 2vw;
     }
 
     .button
     {
-      width:250px;
-      height: 79px;
       border-radius: 140px;
-      font-size: 35px;
+      font-size: 2vw;
+      width: 25%;
+      padding-top: 2%;
+      padding-bottom: 2%;
       font-family: Roboto;
       justify-content: center;
       background-color: transparent;
       border: 0px solid #000;
     }
     .button-negative {
-      font-size: 26px;
+      font-size: 1.4vw;
 
     }
     .button-positive {
@@ -76,7 +77,7 @@
  <div class="flex-container">
   <div class="flex-container-child left"><img src="tshirt.png" id="tshirt" class="image" ></div>
   <div class="flex-container-child right">
-    <p class="title">Want this tshirt ?</p>
+    <p class="title">Want this awesome tshirt ?</p>
     <p class="description">Exclusively available for Manglish users</p>
     <button id="button_1" class="button button-negative">Go Back</button>
     <button id="button_2" class="button button-positive">Button</button>
