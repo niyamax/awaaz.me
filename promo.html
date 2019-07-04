@@ -30,6 +30,12 @@
       transform: perspective(1400px) matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
       transform-style: preserve-3d;
     }
+    .container
+    {
+      justify-content: center;
+      align-content: center;
+      text-align: center;
+    }
     .gwd-img-s0mq {
       position: absolute;
       left: 36px;
@@ -38,7 +44,7 @@
       height: 387px;
       transform-origin: 194.38px 193.5px 0px;
     }
-    .gwd-p-15c2 {
+    .para {
       position: absolute;
       text-align: center;
       font-family: roboto;
@@ -52,7 +58,7 @@
       transform-style: preserve-3d;
       transform: translate3d(-114px, -3px, 0px);
     }
-    .gwd-p-1f5t {
+    .para2 {
       position: absolute;
       font-family: roboto;
       font-size: 50px;
@@ -82,19 +88,22 @@
       margin: 5px;
       background-color: transparent;
       border: 0px solid #000;
+      position: absolute;
+
     }
-    .gwd-button-5nf6 {
+    .button-negative {
       position: absolute;
     
       transform-origin: 79.8611px 19.1667px 0px;
-      left: 450px;
+      left: 43%;
       top: 298px;
 
     }
-    .gwd-button-ptwl {
+    .button-positive {
       position: absolute;
-      left: 700px;
+      left: 60%;
       top: 298px;
+      transform-origin: 79.8611px 19.1667px 0px;
       background-color: #000000;
       border: 1px solid #000;
       color:white;
@@ -104,12 +113,12 @@
 
 <body class="htmlNoPages">
   <img src="tshirt.png" id="tshirt" class="gwd-img-s0mq">
-  <p class="gwd-p-15c2">Want this tshirt ?</p>
-  <p class="gwd-p-1f5t"><span class="gwd-span-1n34">Exclusively available for Manglish users</span><br>
-    
-  </p>
-  <button id="button_1" class="button gwd-button-5nf6">Go Back</button>
-  <button id="button_2" class="button gwd-button-ptwl">Button</button>
+  <div class="container">
+  <p class="para">Want this tshirt ?</p>
+  <p class="para2"><span class="gwd-span-1n34">Exclusively available for Manglish users</span></p>
+  <button id="button_1" class="button button-negative">Go Back</button>
+  <button id="button_2" class="button button-positive">Button</button>
+  </div>
 </body>
 
 </html>
