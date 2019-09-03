@@ -1,0 +1,30 @@
+[
+  {
+    "id": "1661",
+    "tracking_id": "SPLinear",
+    "logo_url": "https://s3.ap-south-1.amazonaws.com/manglish-assets/whatsapp-icon.png",
+    "package_name": "com.clusterdev.statuspro",
+    "referrer": "referrer=utm_source%3Dmanglish_linear",
+    "title": "കൂട്ടുകാരുടെ വാട്ട്സാപ്പ് സ്റ്റാറ്റസ് ഇനി ഡൗൺലോഡ് ചെയ്യാം",
+    "is_title_center_aligned": true,
+    "animation_url": "https://s3.ap-south-1.amazonaws.com/manglish-assets/status-pro-animated.json",
+    "show_in": [
+      "com.whatsapp",
+      "com.whatsapp.w4b",
+      "com.clusterdev.malayalamkeyboard"
+    ],
+    "icon_loop": true,
+    "positive_text": "Buy Now",
+    "negative_text": "Go back",
+    "direct_action": false,
+    "promotion_image_url": "https://assets.manualcreative.com/wp-content/uploads/2017/10/Playa_Product-Family_TI-2998x1999.jpg",
+    "promotion_bg_color": "#000000",
+    "close_button_color": "#ffffff",
+    "positive_button_color": "#000000",
+    "positive_text_color": "#ffffff",
+    "negative_text_color": "#000000",
+    "hide_bottom_bar": true,
+    "center_crop": false,
+    "is_image_promo": true
+  }
+]
